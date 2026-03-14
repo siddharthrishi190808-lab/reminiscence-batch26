@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@1&display=swap" rel="stylesheet">
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                background:black;
+            }
+            .intronavbtn{
+                background:transparent;
+                border:none;
+                color:white;
+                font-size:2vh;
+                font-family:baskervville;
+                cursor:pointer;
+                width:15vh;
+                height:6vh;
+                outline:none;
+                border-radius:10px;
+                margin-left:3vh;
+                margin-right:3vh;
+                transition-duration:0.5s;
+            }
+            .intronavbtn:hover{
+                transition-duration:0.5s;
+                font-size:2.15vh;
+            }
+            .intronav{
+                color:white;
+                position:fixed;
+                z-index:1000;
+                font-size:3.25vh;
+                font-family:baskervville;
+                width:100%;
+                height:6vh;
+                margin-top:5vh;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                opacity:0.4;
+            }
+            .introsection{
+                width: 100%;
+                height: 100vh;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                overflow:hidden;
+            }
+            .introimg {
+                width: 100%;
+                height: auto;
+                display:block;
+                filter:saturate(0) brightness(0.71);
+                opacity:0.8;
+            }
+            .filterup{
+                position:absolute;
+                width:100%;
+                height:100%;
+                background: linear-gradient(to top, #000000 0%, transparent 100%);
+                z-index:1;
+            }
+            .filterdown{
+                position:absolute;
+                width:100%;
+                height:100%;
+                background: linear-gradient(to bottom, #000000 0%, transparent 100%);
+                z-index:1;
+            }
+            .introtexts{
+                position:absolute;
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:center;
+            }
+            .introtext1{
+                font-family:baskervville;
+                color:white;
+                font-size:22vh;
+                z-index:5;
+            }
+            .introtext2{
+                font-family:baskervville;
+                color:white;
+                font-size:4vh;
+                letter-spacing: 3vh;
+            }
+            .introtext3{
+                font-family:Baskervville;
+                color:white;
+                font-size:3vh;
+                width:70%;
+                overflow-wrap:break-word;
+                text-align:center;
+                margin-top:5vh;
+            }
+            .timetext1{
+                font-family:Baskervville;
+                color:white;
+                font-size:22vh;
+            }
+            .standardbutton{
+                background:transparent;
+                border:none;
+                color:white;
+                font-size:2.85vh;
+                font-family:baskervville;
+                cursor:pointer;
+                width:35vh;
+                height:8vh;
+                outline:1.5px solid white;
+                border-radius:15px;
+                margin-top:5vh;
+                z-index:10;
+                letter-spacing:0.5em;
+                opacity:0.7;
+                transition-duration:0.5s;
+            }
+            .standardbutton:hover{
+                transition-duration:0.5s;
+                font-size:3vh;
+                border-radius:20px;
+            }
+            .onlyi{
+                color:white;
+                font-size:4vh;
+                font-family:baskervville;
+            }
+            .busridetitle{
+                color:#ACACAC;
+                font-family:baskervville;
+                font-size:15vh;
+            }
+            .nethbusvid{
+                display:flex;
+                justify-content:center;
+                align-items: center;
+                margin-top:2.5vh;
+                width:40vh;
+                height:55vh;
+                object-fit:cover;
+                filter:blur(0.5vh) saturate(0) brightness(0.6);
+                opacity:0.6;
+                cursor:pointer;
+                transition-duration:0.3s;
+            }
+            .nethbusvid:hover{
+                transition-duration:0.3s;
+                filter:none;
+            }
+            .invidtext1{
+                color:white;
+                font-family:baskervville;
+                font-size:7vh;
+                width:25vh;
+                text-align:center;
+                word-wrap:break-word;
+            }
+            .invidtext2{
+                color:white;
+                margin-top:5px;
+                font-family:baskervville;
+                font-size:2vh;
+                font-style: italic;
+            }
+            .videocard{
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:center;
+                margin-left:1vh;
+                margin-right:1vh;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="intronav">
+            <button class="intronavbtn">NEITHAL</button>
+            <button class="intronavbtn">HOYSALA</button>
+            <div style="margin:40px;font-size:2.7vh;">REMINISCENCE</div>
+            <button class="intronavbtn">GOA</button>
+            <button class="intronavbtn">GRAD</button>
+        </nav>
+        <div class="introsection">
+            <div class="filterup"></div>
+            <img src="Gr11-Neithal(24-25)/IMG_3013.HEIC" class="introimg">
+            <div class="introtexts">
+                <div class="introtext1">RELIVING</div>
+                <div class="introtext2">HIGH SCHOOL MEMORIES</div>
+                <div class="introtext3">I would want something like this for myself hence I thought of making one and sharing it with all of you as well.</div>
+            </div>
+        </div>
+        <div class="introsection" style="flex-direction:column;">
+            <div class="timetext1">TIMELINE</div>
+            <div class="introtext3">This only covers 11th and 12th. I had to make a break section so that is why this is here I guess. That button below barely does anything just so you know. And yes everything is in chronological order.</div>
+            <div class="filterdown"></div>
+            <button class="standardbutton">BEGIN</button>
+        </div>
+        <div class="introsection" style="flex-direction:column;">
+            <div class="filterdown" style="margsjin-top:-40vh;"></div>
+            <div class="filterup" style="margin-top:40vh;"></div>
+            <img src="Gr11-Neithal(24-25)/Neithal Bus Pictures/IMG_2995.HEIC" class="introimg">
+            <div class="introtexts">
+                <div class="introtext1">NEITHAL</div>
+                <div class="introtext2">ONE DAY TRIP</div>
+                <div class="introtext3">Nearly everyone had come for this one. This was our first trip as 11th graders and the boat ride combined with our time beside the shore was memorable</div>
+            </div>
+        </div>
+        <div class="introsection" style="flex-direction:column;margin-top:15vh;">
+            <i class="onlyi">Hover and Click to play video</i>
+            <div class="busridetitle">THE BUS RIDE</div>
+            <div style="display:flex;flex-direction:row;">
+                <div class="videocard">
+                    <div class="introtexts">
+                        <div class="invidtext1" id="t1">FEIN</div>
+                        <div class="invidtext2" id="t2">TRAVIS SCOTT</div>
+                    </div>
+                    <video class="nethbusvid" id="feinvid" muted>
+                        <source src="Gr11-Neithal(24-25)/Neithal Bus Videos/fein og.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="videocard">
+                    <div class="introtexts">
+                        <div class="invidtext1" id="t3" style="font-size:6vh;">NOT LIKE US</div>
+                        <div class="invidtext2" id="t4">KENDRICK LAMAR</div>
+                    </div>
+                    <video class="nethbusvid" id="notlikeusvid" muted>
+                        <source src="Gr11-Neithal(24-25)/Neithal Bus Videos/theynotlikeus.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="videocard">
+                    <div class="introtexts">
+                        <div class="invidtext1" id="t5" style="font-size:6vh;">LUNGI DANCE</div>
+                        <div class="invidtext2" id="t6">YO YO HONEY SINGH</div>
+                    </div>
+                    <video class="nethbusvid" id="lungidancevid" muted>
+                        <source src="Gr11-Neithal(24-25)/Neithal Bus Videos/lungidance.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="videocard">
+                    <div class="introtexts">
+                        <div class="invidtext1" id="t7" style="font-size:6vh;">LET YOU DOWN</div>
+                        <div class="invidtext2" id="t8">GOATED DUO</div>
+                    </div>
+                    <video class="nethbusvid" id="letudownvid" muted>
+                        <source src="Gr11-Neithal(24-25)/Neithal Bus Videos/letudown.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <script>
+            const vid1=document.getElementById('feinvid');
+            const vid2=document.getElementById('notlikeusvid');
+            const vid3=document.getElementById('lungidancevid');
+            const vid4=document.getElementById('letudownvid');
+            window.onload=()=>{
+                vid1.load();
+                vid1.muted=true;
+                vid2.load();
+                vid2.muted=true;
+                vid3.load();
+                vid3.muted=true;
+                vid4.load();
+                vid4.muted=true;
+            }
+            const t1=document.getElementById('t1');
+            const t2=document.getElementById('t2');
+            const t3=document.getElementById('t3');
+            const t4=document.getElementById('t4');
+            const t5=document.getElementById('t5');
+            const t6=document.getElementById('t6');
+            const t7=document.getElementById('t7');
+            const t8=document.getElementById('t8');
+            vid1.addEventListener('mouseenter',()=>{
+                vid1.muted=true;
+                t1.style.opacity=0;
+                t2.style.opacity=0;
+                vid1.addEventListener('click',()=>{
+                    vid1.muted=false;
+                    vid1.play();
+                });
+            });
+            vid1.addEventListener('mouseleave',()=>{
+                vid1.pause();
+                t1.style.opacity=1;
+                t2.style.opacity=1;
+            });
+            vid2.addEventListener('mouseenter',()=>{
+                vid2.muted=true;
+                t3.style.opacity=0;
+                t4.style.opacity=0;
+                vid2.addEventListener('click',()=>{
+                    vid2.muted=false;
+                    vid2.play();
+                });
+            });
+            vid2.addEventListener('mouseleave',()=>{
+                vid2.pause();
+                t3.style.opacity=1;
+                t4.style.opacity=1;
+            });
+            vid3.addEventListener('mouseenter',()=>{
+                vid3.muted=true;
+                t5.style.opacity=0;
+                t6.style.opacity=0;
+                vid3.addEventListener('click',()=>{
+                    vid3.muted=false;
+                    vid3.play();
+                });
+            });
+            vid3.addEventListener('mouseleave',()=>{
+                vid3.pause();
+                t5.style.opacity=1;
+                t6.style.opacity=1;
+            });
+            vid4.addEventListener('mouseenter',()=>{
+                vid4.muted=true;
+                t7.style.opacity=0;
+                t8.style.opacity=0;
+                vid4.addEventListener('click',()=>{
+                    vid4.muted=false;
+                    vid4.play();
+                });
+            });
+            vid4.addEventListener('mouseleave',()=>{
+                vid4.pause();
+                t7.style.opacity=1;
+                t8.style.opacity=1;
+            });
+        </script>
+        <div style="position:absolute;top:5000px;">r</div>
+    </body>
+</html>
