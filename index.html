@@ -6,6 +6,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@1&display=swap" rel="stylesheet">
         <style>
+            html{
+                scroll-behavior:smooth;
+            }
             body{
                 margin:0;
                 padding:0;
@@ -271,12 +274,13 @@
             .shoretitle{
                 text-align:center;
                 color:#ACACAC;
-                font-family:baskervville;
+                font-family:baskervville; 
                 font-size:22vh;
             }
             .standardimgviewer{
                 width:100%;
                 height:100vh;
+                margin-bottom:60vh;
                 display:flex;
                 flex-wrap:wrap;
                 justify-content:center;
@@ -288,7 +292,7 @@
                 cursor:pointer;
                 margin:1vh;
                 object-fit: cover;
-                opacity:0.8;
+                opacity:0.7;
                 filter:saturate(0);
                 transition-duration:0.3s;
             }
@@ -297,11 +301,38 @@
                 opacity:1;
                 filter:none;
             }
+            .boatno{
+                color:white;
+                font-family:baskervville;
+                font-size:15vh;
+            }
+            .boatppl{
+                color:#ACACAC;
+                font-family:baskervville;
+                font-size:3vh;
+            }
+            .boatimg{
+                width:70%;
+                height:50vh;
+                object-fit:cover;
+                margin-top:5vh;
+                filter:saturate(0) brightness(0.7);
+                opacity:0.8;
+                border-radius:0px;
+                transition-duration:0.4s;
+            }
+            .boatimg:hover{
+                transition-duration:0.4s;
+                border-radius:25px;
+                filter:none;
+                cursor:pointer;
+                opacity:1;
+            }
         </style>
     </head>
     <body>
         <nav class="intronav">
-            <button class="intronavbtn">NEITHAL</button>
+            <button class="intronavbtn" onclick="Neithal()">NEITHAL</button>
             <button class="intronavbtn">HOYSALA</button>
             <div style="margin:40px;font-size:2.7vh;">REMINISCENCE</div>
             <button class="intronavbtn">GOA</button>
@@ -313,16 +344,16 @@
             <div class="introtexts">
                 <div class="introtext1">RELIVING</div>
                 <div class="introtext2">HIGH SCHOOL MEMORIES</div>
-                <div class="introtext3">The elements of this webpage often transition to colour on mouse hover but this is inapplicable to all elements.</div>
+                <div class="introtext3">Hovering over images brings colour to them. This is not applicable to all images in this page though.</div>
             </div>
         </div>
         <div class="introsection" style="flex-direction:column;">
             <div class="timetext1">TIMELINE</div>
-            <div class="introtext3">This only covers 11th and 12th. I had to make a break section so that is why this is here I guess. That button below barely does anything just so you know. And yes everything is in chronological order.</div>
+            <div class="introtext3">I had to make a break section so that is why this is here I guess. That button below barely does anything just so you know. And yes everything is in chronological order.</div>
             <div class="filterdown"></div>
-            <button class="standardbutton">BEGIN</button>
+            <button class="standardbutton" onclick="Neithal()">BEGIN</button>
         </div>
-        <div class="introsection" style="flex-direction:column;">
+        <div class="introsection" style="flex-direction:column;" id="neithaljs">
             <div class="filterdown" style="margin-top:-40vh;"></div>
             <img src="./Neithal Bus Pictures/IMG_2995.jpg" class="introimg">
             <div class="introtexts">
@@ -414,7 +445,49 @@
             <img src="./By The Shore/IMG_3210.png">
             <img src="./By The Shore/IMG_3054.png">
         </div>
+        <div class="introsection">
+            <div class="filterdown"></div>
+            <img src="./Neithal Boat/IMG_3173.png" class="introimg">
+            <div class="introtexts">
+                <div class="introtext2">THE</div>
+                <div class="introtext1" style="opacity:0.7">BOAT RIDE</div>
+            </div>
+        </div>
+        <div class="introsection" style="flex-direction:column;">
+            <div class="boatno">BOAT-1</div>
+            <div class="boatppl">SOUMYAA | ROSHNI | AKSHAYA | KEERTHANA | SHIVANI</div>
+            <img src="./Neithal Boat/IMG_3094.png" class="boatimg">
+        </div>
+        <div class="introsection" style="flex-direction:column;">
+            <div class="boatno">BOAT-2</div>
+            <div class="boatppl">THANEESH | ARNAV | AKHIL | MRIDHULA | SREE SRUTHI | KRITHIKA</div>
+            <img src="./Neithal Boat/IMG_3176.png" class="boatimg">
+        </div>
+        <div class="introsection" style="flex-direction:column;">
+            <div class="boatno">BOAT-3</div>
+            <div class="boatppl">SRUTHI | PRAGYA | SHRUTHI | PADMA | NAVYA | HARSHINI</div>
+            <img src="./Neithal Boat/IMG_3096.png" class="boatimg">
+        </div>
+        <div class="introsection" style="flex-direction:column;">
+            <div class="boatno">BOAT-4</div>
+            <div class="boatppl">PRANAV | JISHNU | VARUN | PRIYANSHU | LIKITH | AKSHAJ</div>
+            <img src="./Neithal Boat/IMG_3097.png" class="boatimg">
+        </div>
+        <div class="introsection" style="flex-direction:column;">
+            <div class="boatno">BOAT-5</div>
+            <div class="boatppl">KAVIN | KRITHIK | SATYAVEL | SIDDHARTH | DHRUV</div>
+            <img src="./Neithal Boat/IMG_3091.png" class="boatimg">
+        </div>
+        <div class="introsection" style="flex-direction:column;">
+            <div class="boatno">BOAT-6</div>
+            <div class="boatppl">NETHRA | AASHRITA | YUVIKA | ESHA | PAVITHRA | DITYA</div>
+            <img src="./Neithal Boat/IMG_3090.png" class="boatimg">
+        </div>
         <script>
+            function Neithal(){
+                const neithaljs=document.getElementById('neithaljs');
+                neithaljs.scrollIntoView();
+            }
             function showBus(){
                 const moreimgdisp=document.querySelector('.moreimgdisp');
                 moreimgdisp.style.display='flex';
@@ -502,6 +575,6 @@
                 t8.style.opacity=1;
             });
         </script>
-        <div style="position:absolute;top:5000px;">r</div>
+        <div style="position:absolute;top:10000px;">r</div>
     </body>
 </html>
