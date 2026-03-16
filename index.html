@@ -14,24 +14,34 @@
                 padding:0;
                 background:black;
             }
+            .navfiller{
+                width:70%;
+                height:100%;
+                position:absolute;
+                background: rgba(101, 101, 101, 0.3); 
+                backdrop-filter: blur(8px);         
+                -webkit-backdrop-filter: blur(8px);
+                border-radius:100vh;
+            }
             .intronavbtn{
                 background:transparent;
                 border:none;
                 color:white;
-                font-size:2vh;
+                font-size:1.75vh;
                 font-family:baskervville;
                 cursor:pointer;
                 width:15vh;
                 height:6vh;
                 outline:none;
                 border-radius:10px;
-                margin-left:3vh;
-                margin-right:3vh;
+                margin-left:1.5vh;
+                margin-right:1.5vh;
+                opacity:0.55;
                 transition-duration:0.5s;
             }
             .intronavbtn:hover{
                 transition-duration:0.5s;
-                font-size:2.15vh;
+                font-size:2vh;
             }
             .intronav{
                 color:white;
@@ -40,12 +50,11 @@
                 font-size:3.25vh;
                 font-family:baskervville;
                 width:100%;
-                height:6vh;
                 margin-top:5vh;
+                height:8vh;
                 display:flex;
                 justify-content:center;
                 align-items:center;
-                opacity:0.4;
             }
             .introsection{
                 width: 100%;
@@ -332,9 +341,10 @@
     </head>
     <body>
         <nav class="intronav">
+            <div class="navfiller"></div>
             <button class="intronavbtn" onclick="Neithal()">NEITHAL</button>
             <button class="intronavbtn">HOYSALA</button>
-            <div style="margin:40px;font-size:2.7vh;">REMINISCENCE</div>
+            <div style="margin:40px;font-size:2.3vh;z-index:5;">REMINISCENCE</div>
             <button class="intronavbtn">GOA</button>
             <button class="intronavbtn">GRAD</button>
         </nav>
