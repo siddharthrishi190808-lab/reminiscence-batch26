@@ -380,7 +380,7 @@
                 margin-top:2vh;
                 overflow-y:scroll;
                 display:flex;
-                justify-content:center;
+                justify-content:flex-start;
                 align-items:center;
                 flex-direction:column;
             }
@@ -615,7 +615,7 @@
                 <div class="playlist">
                     <div class="playlisttitle">PLAYLIST (13)</div>
                     <div class="playlisttitle" style="font-size:3vh;text-align:center;letter-spacing:0;color:#ACACAC;">CLICK ON VIDEO THUMBNAIL TO PLAY</div>
-                    <div class="hoyvids" style="overflow-x:none;">
+                    <div class="hoyvids" style="overflow-x:none;" id="hoyvidscont">
                         <div class="line"></div>
                         <div class="hoyvidformat">
                             <video class="hoythumb" onclick="playthisvid(this)">
