@@ -337,6 +337,109 @@
                 cursor:pointer;
                 opacity:1;
             }
+            .videoholder{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction: row;
+            }
+            .hoyvid{
+                width:100%;
+                object-fit:cover;
+                height:75vh;
+                filter:saturate(0);
+                transition-duration:0.3s;
+            }
+            .hoyvidcontainer{
+                width:65%;
+                height:75vh;
+            }
+            .hoyvidcontainer:hover video{
+                transition-duration:0.3s;
+                filter:saturate(1) brightness(1.25);
+            }
+            .playlisttitle{
+                color:white;
+                font-family:Bebas Neue;
+                font-size:6vh;
+                letter-spacing:0.2vh;
+            }
+            .playlist{
+                background:transparent;
+                width:30%;
+                height:75vh;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction:column;
+                margin-left:2vh;
+            }
+            .hoyvids{
+                width:100%;
+                height:60vh;
+                margin-top:2vh;
+                overflow-y:scroll;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction:column;
+            }
+            .hoyvidformat{
+                margin-left:5vh;
+                width:100%;
+                height:20vh;
+                border-radius:30px;
+                margin-bottom:2vh;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                color:white;
+                font-family:Bebas Neue;
+                font-size:4vh;
+                filter:saturate(0);
+                transition-duration:0.5s;
+            }
+            .hoyvidformat:hover{
+                transition-duration:0.5s;
+                cursor:pointer;
+                filter:none;
+                background:black;
+            }
+            .hoythumb{
+                width:40%;
+                height:14.5vh;
+                object-fit:cover;
+                filter:saturate(0) brightness(1.2);
+                transition-duration:0.3s;
+            }
+            .hoythumb:hover{
+                transition-duration:0.3s;
+                filter:none;
+            }
+            .vidtext1{
+                word-wrap: break-word;
+                color:white;
+                font-family:Baskervville;
+                text-align:center;
+                font-size:3vh;
+            }
+            .shotby{
+                margin-top:2vh;
+                font-size:1.25vh;
+                color:#ACACAC;
+                font-family:Baskervville;
+                text-align:center;
+                margin-left:1vh;
+                letter-spacing:0.2vh;
+            }
+            .line{
+                width:90%;
+                height:0.75px;
+                background:rgb(101, 101, 101);
+                margin-bottom:2vh;
+                margin-top:1vh;
+                z-index:8;
+            }
         </style>
     </head>
     <body>
@@ -493,7 +596,177 @@
             <div class="boatppl">NETHRA | AASHRITA | YUVIKA | ESHA | PAVITHRA | DITYA</div>
             <img src="./Neithal Boat/IMG_3090.png" class="boatimg">
         </div>
+        <div class="introsection" style="flex-direction: column;">
+            <div class="filterdown"></div>
+            <img src="image-10.png" class="introimg">
+            <div class="introtexts">
+                <div class="introtext1">HOYSALA</div>
+                <div class="introtext2">THREE DAY TRIP</div>
+                <div class="introtext3">This trip featured some of the best mafia games ;-;-; trust</div>
+            </div>
+        </div>
+        <div class="introsection" style="flex-direction: column;margin-top:10vh;">
+            <div class="videoholder">
+                <div class="hoyvidcontainer">
+                    <video class="hoyvid" id="hoysalavideo" controls>
+                        <source src="./Hoysala Tube/1000059736.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="playlist">
+                    <div class="playlisttitle">PLAYLIST (13)</div>
+                    <div class="playlisttitle" style="font-size:3vh;text-align:center;letter-spacing:0;color:#ACACAC;">CLICK ON VIDEO THUMBNAIL TO PLAY</div>
+                    <div class="hoyvids" style="overflow-x:none;">
+                        <div class="line"></div>
+                        <div class="hoyvidformat">
+                            <video class="hoythumb" onclick="playthisvid(this)">
+                                <source src="./Hoysala Tube/1000059736.mp4" type="video/mp4">
+                            </video>
+                            <div style="display:flex;flex-direction:column;width:40%;">
+                                <div class="vidtext1">Exploring Sculptures</div>
+                                <div class="shotby">SHOT BY JISHNU</div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="hoyvidformat">
+                            <video class="hoythumb" onclick="playthisvid(this)">
+                                <source src="./Hoysala Tube/1000059750.mp4" type="video/mp4">
+                            </video>
+                            <div style="display:flex;flex-direction:column;width:40%;">
+                                <div class="vidtext1">Intro To Temple</div>
+                                <div class="shotby">SHOT BY JISHNU</div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="hoyvidformat">
+                            <video class="hoythumb" onclick="playthisvid(this)">
+                                <source src="./Hoysala Tube/1000059733.mp4" type="video/mp4">
+                            </video>
+                            <div style="display:flex;flex-direction:column;width:40%;">
+                                <div class="vidtext1">Stairs Skill Issue</div>
+                                <div class="shotby">SHOT BY JISHNU</div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="hoyvidformat">
+                            <video class="hoythumb" onclick="playthisvid(this)">
+                                <source src="./Hoysala Tube/1000059753.mp4" type="video/mp4">
+                            </video>
+                            <div style="display:flex;flex-direction:column;width:40%;">
+                                <div class="vidtext1">Recording Disallowed Here</div>
+                                <div class="shotby">SHOT BY JISHNU</div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="hoyvidformat">
+                            <video class="hoythumb" onclick="playthisvid(this)">
+                                <source src="./Hoysala Tube/1000059745.mp4" type="video/mp4">
+                            </video>
+                            <div style="display:flex;flex-direction:column;width:40%;">
+                                <div class="vidtext1">Walking To The Temple</div>
+                                <div class="shotby">SHOT BY JISHNU</div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="hoyvidformat">
+                            <video class="hoythumb" onclick="playthisvid(this)">
+                                <source src="./Hoysala Tube/1000059783.mp4" type="video/mp4">
+                            </video>
+                            <div style="display:flex;flex-direction:column;width:40%;">
+                                <div class="vidtext1">Local Street Dance</div>
+                                <div class="shotby">SHOT BY JISHNU</div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="hoyvidformat">
+                            <video class="hoythumb" onclick="playthisvid(this)">
+                                <source src="./Hoysala Tube/1000059959.mp4" type="video/mp4">
+                            </video>
+                            <div style="display:flex;flex-direction:column;width:40%;">
+                                <div class="vidtext1">Risky Moves There</div>
+                                <div class="shotby">SHOT BY JISHNU</div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="hoyvidformat">
+                            <video class="hoythumb" onclick="playthisvid(this)">
+                                <source src="./Hoysala Tube/1000059703.mp4" type="video/mp4">
+                            </video>
+                            <div style="display:flex;flex-direction:column;width:40%;">
+                                <div class="vidtext1">No One Is Listening ;-;</div>
+                                <div class="shotby">SHOT BY JISHNU</div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="hoyvidformat">
+                            <video class="hoythumb" onclick="playthisvid(this)">
+                                <source src="./Hoysala Tube/1000059739.mp4" type="video/mp4">
+                            </video>
+                            <div style="display:flex;flex-direction:column;width:40%;">
+                                <div class="vidtext1">Will The Camera Fall</div>
+                                <div class="shotby">SHOT BY JISHNU</div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="hoyvidformat">
+                            <video class="hoythumb" onclick="playthisvid(this)">
+                                <source src="./Hoysala Tube/1000059753.mp4" type="video/mp4">
+                            </video>
+                            <div style="display:flex;flex-direction:column;width:40%;">
+                                <div class="vidtext1">Recording Disallowed Here</div>
+                                <div class="shotby">SHOT BY JISHNU</div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="hoyvidformat">
+                            <video class="hoythumb" onclick="playthisvid(this)">
+                                <source src="./Hoysala Tube/1000059938.mp4" type="video/mp4">
+                            </video>
+                            <div style="display:flex;flex-direction:column;width:40%;">
+                                <div class="vidtext1">Why Is Bro Depressed</div>
+                                <div class="shotby">SHOT BY JISHNU</div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="hoyvidformat">
+                            <video class="hoythumb" onclick="playthisvid(this)">
+                                <source src="./Hoysala Tube/1000059721.mp4" type="video/mp4">
+                            </video>
+                            <div style="display:flex;flex-direction:column;width:40%;">
+                                <div class="vidtext1">Pre Fein</div>
+                                <div class="shotby">SHOT BY JISHNU</div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="hoyvidformat">
+                            <video class="hoythumb" onclick="playthisvid(this)">
+                                <source src="./Hoysala Tube/1000059727.mp4" type="video/mp4">
+                            </video>
+                            <div style="display:flex;flex-direction:column;width:40%;">
+                                <div class="vidtext1">Fein Again</div>
+                                <div class="shotby">SHOT BY JISHNU</div>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="hoyvidformat">
+                            <video class="hoythumb" onclick="playthisvid(this)">
+                                <source src="./Hoysala Tube/1000059944.mp4" type="video/mp4">
+                            </video>
+                            <div style="display:flex;flex-direction:column;width:40%;">
+                                <div class="vidtext1">Trip Reviews</div>
+                                <div class="shotby">SHOT BY JISHNU</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script>
+            const hoyvid = document.getElementById('hoysalavideo');
+            function playthisvid(vid){
+                hoyvid.src=vid.children[0].src;
+                hoyvid.load();
+                hoyvid.play();
+            }
             function Neithal(){
                 const neithaljs=document.getElementById('neithaljs');
                 neithaljs.scrollIntoView();
@@ -585,6 +858,6 @@
                 t8.style.opacity=1;
             });
         </script>
-        <div style="position:absolute;top:10000px;">r</div>
+        <div style="position:absolute;top:15000px;">r</div>
     </body>
 </html>
