@@ -446,7 +446,7 @@
         <nav class="intronav">
             <div class="navfiller"></div>
             <button class="intronavbtn" onclick="Neithal()">NEITHAL</button>
-            <button class="intronavbtn">HOYSALA</button>
+            <button class="intronavbtn" onclick="Hoysala()">HOYSALA</button>
             <div style="margin:40px;font-size:2.3vh;z-index:5;opacity:0.8;">REMINISCENCE</div>
             <button class="intronavbtn">GOA</button>
             <button class="intronavbtn">GRAD</button>
@@ -596,7 +596,7 @@
             <div class="boatppl">NETHRA | AASHRITA | YUVIKA | ESHA | PAVITHRA | DITYA</div>
             <img src="./Neithal Boat/IMG_3090.png" class="boatimg">
         </div>
-        <div class="introsection" style="flex-direction: column;">
+        <div class="introsection" style="flex-direction: column;" id="hoysalajs">
             <div class="filterdown"></div>
             <img src="image-10.png" class="introimg">
             <div class="introtexts">
@@ -760,6 +760,9 @@
                 </div>
             </div>
         </div>
+        <div>
+            
+        </div>
         <script>
             const hoyvid = document.getElementById('hoysalavideo');
             function playthisvid(vid){
@@ -770,6 +773,10 @@
             function Neithal(){
                 const neithaljs=document.getElementById('neithaljs');
                 neithaljs.scrollIntoView();
+            }
+            function Hoysala(){
+                const hoysalajs=document.getElementById('hoysalajs');
+                hoysalajs.scrollIntoView();
             }
             function showBus(){
                 const moreimgdisp=document.querySelector('.moreimgdisp');
